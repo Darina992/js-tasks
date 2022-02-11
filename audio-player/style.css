@@ -1,0 +1,167 @@
+body{
+  margin:0;
+  padding: 50px 0 0;
+  background-image: url('./assets/img/lemonade.png');
+  background-position:  center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+main{
+  flex: 1 1 auto;
+}
+.blur{
+  backdrop-filter: blur(10px);
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.conteiner{
+  width: 400px;
+  height: 500px;
+  margin:0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  color: white;
+
+}
+.audio-image{
+  height: 63%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.image{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  width: 103%;
+}
+.transform{
+  transform: scale(1.15) ;
+  transition: 1s;
+}
+.transform-back{
+  transform: scale(1) ;
+  transition: 1s;
+}
+.audio-controlls{
+  height: 38%;
+  width: 100%;
+  background-color: grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.controlls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.button-play{
+  width: 55px;
+  height: 55px;
+
+  cursor:pointer;
+}
+.button-play.play{
+  background: url('./assets/svg/play.png') 0 0 no-repeat;
+  background-size: contain;
+}
+.button-play.pause{
+  background: url('./assets/svg/pause.png') 0 0 no-repeat;
+  background-size: contain;
+}
+.name{
+  font-size: 20px;
+}
+.name-singer{
+  color:#bbe63e;
+}
+.name-song{
+  color:white;
+}
+.switch{
+
+}
+.previous{
+  width: 45px;
+  height: 45px;
+  background: url('./assets/svg/backward.png') 0 0 no-repeat;
+  background-size: contain;
+  cursor:pointer;
+}
+.next{
+  width: 45px;
+  height: 45px;
+  background: url('./assets/svg/forward.png') 0 0 no-repeat;
+  background-size: contain;
+  cursor:pointer;
+}
+.progress{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+.line{
+  width: 90%;
+  position: relative;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 8px;
+  height: 10px;
+  border: 1px solid #bdc3c7;
+  background-color: dimgrey;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #bbe63e;
+  border: 1px solid #bdc3c7;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.all-time{
+  align-self: flex-end;
+  color: #bbe63e;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5%;
+}
+.time{
+  align-self: flex-start;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 auto;
+  background-color: #bbe63e;
+  padding: 15px;
+}
+footer a{
+  text-decoration: none;
+  color:black;
+}
+.rs-link{
+  width: 100px;
+  height: 50px;
+  background: url('./assets/svg/rs.svg') 0 0 no-repeat;
+  background-size: contain;
+}
