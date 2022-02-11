@@ -1,0 +1,86 @@
+body{
+  margin:0;
+  background-color: lightyellow;
+  font-family: 'Balsamiq Sans', cursive;
+}
+.spa{
+  text-align: center;
+}
+h2{
+  height: 50px;
+  text-align: center;
+}
+.grid{
+  border:10px double forestgreen;
+  display: flex;
+  flex-wrap: wrap;
+  width:600px;
+  height: 450px;
+  margin:20px auto;
+}
+.grid img{
+  display: block;
+  transform-style: preserve-3d;
+  transition: all .3s ease;
+}
+.rotated {
+  transform: rotateY(-180deg);
+}
+
+.button-restart-memory, .button-records{
+  display: inline-block;
+  margin: 10px auto;
+  background: rgb(230,63,27);
+  background: linear-gradient(0deg, rgba(230,63,27,1) 0%, rgba(253,187,45,1) 100%);
+  border:2px solid rgb(230,63,27);
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  height: 40px;
+  width: 180px;
+  transition: 0.3s;
+  font-family: inherit;
+}
+.button-restart-memory{
+  margin-right: 20px;
+}
+.button-restart-memory:hover, .button-records:hover{
+  border-color:yellow;
+}
+.button-restart-memory:active, .button-records:active{
+  transform: scale(0.95);
+}
+.records{
+  width: 50%;
+  margin: 0 auto;
+}
+.records table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.records td, .records th{
+  border:2px solid black;
+  width: 50%;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bbe63e;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left:0;
+  bottom: 0;
+}
+footer a{
+  text-decoration: none;
+  color:black;
+}
+.rs-link{
+  width: 100px;
+  height: 50px;
+  background: url('./assets/rs.svg') 0 0 no-repeat;
+  background-size: contain;
+}
